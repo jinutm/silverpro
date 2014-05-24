@@ -1,11 +1,11 @@
 en:
   facebook_locale: 'en_US'
   site:
-    title: "Invest in civic projects you care about"
+    title: "Help People in Hard Times"
     meta_title:  "%{title} · %{company_name}"
-    description: "Crowdfunding for civic projects. Invest in places and civic projects you care about."
-    keywords: "Neighbor.ly, crowdfunding, project, community, open source, civic"
+    description: "Together We Can Make It Happen."
+    keywords: "Silveralms.com, crowdfunding, project, community, food, daily bread"
     email:
-      contact: 'howdy@neighbor.ly'
+      contact: 'comjitsolutions@gmail.com'
     ograph:
-      description: "Neighbor.ly is the best way for people, companies, and foundations to invest in the places and civic projects they care about."
+      description: "Silver Alms is the best way for people and communities to get funded for their need."
