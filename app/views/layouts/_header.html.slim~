@@ -19,7 +19,7 @@ header.fixed
         / Left Nav Section
         ul.left
           li#new_idea
-          li
+          li#
             = link_to about_path do
               i.icon-et-info-circled
               = t('.about')
