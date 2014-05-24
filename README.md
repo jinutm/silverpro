@@ -1,4 +1,5 @@
-# Neighbor.ly [![Build Status](https://secure.travis-ci.org/neighborly/neighborly.png?branch=master)](https://travis-ci.org/neighborly/neighborly) [![Coverage Status](https://coveralls.io/repos/neighborly/neighborly/badge.png?branch=master)](https://coveralls.io/r/neighborly/neighborly) [![Code Climate](https://codeclimate.com/github/neighborly/neighborly.png)](https://codeclimate.com/github/neighborly/neighborly) [![Dependency Status](https://gemnasium.com/neighborly/neighborly.png)](https://gemnasium.com/neighborly/neighborly) 
+# Silver Alms 
+
 
 Welcome to the first open source fundraising toolkit for needy people. Silveralms starting their venture on coming May 29th 2014. As a fork of the wildly successful Brazillian crowdfunding platform [Catarse](https://github.com/catarse/catarse) and International crowdfunding paltform [Neighborly](https://github.com/neighborly/neighborly). Working closely with the developers of those project, helped us to build silveralms and we are always thankful for their support.
 
