@@ -1,0 +1,56 @@
+.success-project-page
+  min-height: +emCalc(800px)
+.new-project-page, .success-project-page
+  background-size: cover
+  background-position: center
+  background-color: #0dc9f7
+  background-image: image-url('categories/default.jpg')
+  -ms-behavior: asset-url('backgroundsize.htc')\8
+  +single-transition(background-image, 1s)
+
+  &.category-environment
+    background-image: image-url('categories/environment.jpg')
+  &.category-event
+    background-image: image-url('categories/event.jpg')
+  &.category-mobility
+    background-image: image-url('categories/mobility.jpg')
+  &.category-recreation
+    background-image: image-url('categories/recreation.jpg')
+  &.category-restoration
+    background-image: image-url('categories/restoration.jpg')
+
+  .new-project-box, .success-project-box
+    margin-top: +emCalc(30px)
+    margin-bottom: +emCalc(100px)
+    background: rgba(255, 255, 255, 0.9)
+
+    hr
+      border-color: #999
+
+    h3
+      color: #0dc9f7
+      font-weight: 500
+      text-align: center
+      padding-top: +emCalc(10px)
+      i
+        width: +emCalc(20px)
+        height: +emCalc(20px)
+        +radius(50%)
+        font-size: 200%
+        background: #0dc9f7
+        color: white
+        display: inline-block
+        margin-bottom: +emCalc(5px)
+
+    .button
+      margin-top: +emCalc(15px)
+      width: 100%
+
+    .address
+      input
+        margin-bottom: +emCalc(5px)
+      .map-canvas
+        margin-bottom: +emCalc(20px)
+
+    .text-right, .text-left
+      display: inline-block

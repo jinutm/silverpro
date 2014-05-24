@@ -1,0 +1,57 @@
+header.fixed
+  nav.top-bar
+    .row
+      ul.title-area
+        li.name
+          h1
+            - if Rails.env.production?
+              - url = root_url(host: Configuration[:base_domain] || request.domain, protocol: 'http')
+            - else
+              - url = root_url
+            = link_to Configuration[:company_name], url
+
+        / Mobile thing
+        li.toggle-topbar.menu-icon
+          a href="#"
+            span Menu
+
+      .top-bar-section
+        / Left Nav Section
+        ul.left
+          li#new_idea
+          li
+            = link_to about_path do
+              i.icon-et-info-circled
+              = t('.about')
+          li
+            = link_to discover_path do
+              i.icon-et-map
+              = t('.discover')
+          li
+            = link_to start_path do
+              i.icon-et-rocket
+              = t('.start_campaign')
+
+        / Right Nav Section
+        ul.right
+          li
+            span.user-actions[class="#{'un-signed-in' unless user_signed_in?}"]
+              - if user_signed_in?
+                = link_to edit_user_path(current_user), class: 'user-profile' do
+                  = image_tag current_user.display_image, size: "18x18", class: 'profile-picture', alt: ''
+                  |  Howdy, #{ current_user.first_name }!
+                span.divider |
+                = link_to t('.sign-out'), destroy_user_session_path, method: :delete, class: 'sign-out'
+              - else
+                = link_to t('.sign-up'), new_user_registration_path, class: 'sign-up'
+                span.divider |
+                = link_to t('.sign-in'), new_user_session_path, class: 'sign-in'
+          li.search
+            span.search-box
+              = form_tag discover_path, method: 'GET', class: 'discover-form' do
+                = text_field_tag :search, nil, autocomplete: "off", value: params[:search], class: "discover-form-input #{'show' if params[:search].present?}", placeholder: 'Search...'
+                = submit_tag
+
+              = link_to '#search', class: 'search-button' do
+                i.icon-et-search
+                | &nbsp;

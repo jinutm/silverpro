@@ -1,0 +1,8 @@
+.subtle-title
+  font-weight: 100
+  text-transform: uppercase
+  color: $secondary-font-color
+
+.row.page-main-content
+  margin-top: +emCalc(30px)
+  margin-bottom: +emCalc(30px)

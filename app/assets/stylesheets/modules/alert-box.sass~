@@ -1,0 +1,20 @@
+.alert-box
+  @extend .radius
+  padding: +emCalc(10px)
+  background: #0dc9f7
+  &.success, &.notice
+    background: #97db2c
+  &.error, &.warning
+    background: #e44424
+  h1, h2, h3, h4, h5, h6
+    color: white
+  p
+    color: darken(white, 10%)
+.flash
+  .alert-box
+    +radius(0)
+
+#devise
+  .flash
+    .alert-box
+      margin-top: 0

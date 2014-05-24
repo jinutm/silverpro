@@ -1,0 +1,21 @@
+header.hero
+  padding: +emCalc(60px) 0
+  min-height: +emCalc(330px)
+  color: black
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.5)
+  &, .backstretch
+    background: #f2f2f2
+  &.small
+    min-height: +emCalc(200px)
+  &.center
+    text-align: center
+  h2, h3, h4, h5
+    color: white
+  h2
+    font-weight: bold
+  h3
+    text-transform: uppercase
+    font-weight: 300
+    padding-top: +emCalc(8px)
+  .button, input, .tooltip-content
+    text-shadow: none

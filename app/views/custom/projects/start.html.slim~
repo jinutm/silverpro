@@ -15,11 +15,11 @@
               .input-prepend
                 span.add-on R$
                 = text_field_tag 'how_much_you_need'
-                p.inline-hints.much= t('.how_much_hint_html', href: "http://blog.silveralms.com")
+                p.inline-hints.much= t('.how_much_hint_html', href: "http://blog.catarse.me/sua-campanha-no-catarse-precisa-de-um-empurrazinho/")
               .bootstrap-alert
                 span
                 .alert
-                  .important= t('.how_much_important', link: link_to("Paypal", "http://paypal.com", target: :_blank))
+                  .important= t('.how_much_important', link: link_to("MoIP", "http://www.moip.com.br/", target: :_blank))
             .input
               = image_tag "catarse/icon_datestart.png", class: 'date'
               = label_tag 'days', t('.days')
@@ -37,7 +37,7 @@
               .bootstrap-alert
                 span
                 .alert
-                  .important= t('.tags_important', href: "http://www.silveralms.com/explore").html_safe
+                  .important= t('.tags_important', href: "http://www.catarse.me/explore").html_safe
               p.inline-hints= t('.tags_hint')
 
             .input

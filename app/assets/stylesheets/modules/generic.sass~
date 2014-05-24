@@ -1,0 +1,65 @@
+html
+  background: #ffffff
+
+::selection, ::-moz-selection
+  background: $primary-color
+  color: white
+
+ul.no-style
+  list-style: none
+
+.reveal-modal
+  border-radius: 4px
+  z-index: 101
+
+.reveal-modal-bg
+  z-index: 100
+
+.white
+  background: white
+
+.clearfix
+  +clearfix
+
+.text-padding
+  padding: +emCalc(15px)
+
+.text-box
+  background-color: white
+  border-radius: 4px
+  border: 1px solid darken($body-bg, 11%)
+  box-shadow: darken($body-bg, 5%) 2px 2px 6px, darken($body-bg, 5%) -2px -2px 6px
+
+.sortable-highlight
+  border: 2px dashed $border-color
+
+.map-canvas
+  width: 100%
+  height: +emCalc(200px)
+
+.see-more
+  color: $primary-color
+  text-transform: uppercase
+  font-size: 130%
+  font-weight: 300
+  i
+    padding-left: +emCalc(5px)
+
+.alert-box.hide
+  display: none
+
+.error-page
+  .columns
+    text-align: center
+    margin: +emCalc(50px, 0)
+
+ul, ol
+  li
+    p
+      display: inline-block
+
+.affix
+  position: fixed
+
+.affix-bottom
+  position: absolute
