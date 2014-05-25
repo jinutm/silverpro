@@ -15,6 +15,7 @@ gem 'capistrano-bundler', '~> 1.1.2'
 gem 'capistrano-rails', '~> 1.1.1'
 gem 'capistrano-rvm', github: "capistrano/rvm"
 gem 'rvm1-capistrano3', :require => false
+gem 'therubyracer'
 
 # Turns every field on a editable one
 gem 'best_in_place', github: 'bernat/best_in_place', branch: 'rails-4'

@@ -1,14 +1,14 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, 'silveralms'
+set :application, 'silveralms.com'
 set :repo_url, 'https://github.com/jinutm/silveralms.com.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/deploy/silveralms'
+set :deploy_to, '/home/deploy/silveralms.com'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -23,7 +23,7 @@ set :deploy_to, '/home/deploy/silveralms'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :make_linked_dirs, %w{config/database.yml}
+set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
