@@ -1,0 +1,44 @@
+== Welcome to font-icons-rails gem
+
+This package includes following font icon families:
+* http://fortawesome.github.com/Font-Awesome/
+* http://www.entypo.com/characters.php
+
+Packaged as a single gem for easy use in rails >=3.1 applications.
+
+== Getting Started
+
+1. Add the font-icons-rails gem to the Gemfile:
+
+    gem 'font-icons-rails', :git=> 'git://github.com/shorelabs/font-icons-rails.git'
+
+2. Import the package in application.css.scss or any other SCSS stylesheet:
+
+    @import 'font-icons';
+
+3. Use it in HTML:
+    <!-- Entypo icons are prefixed with icon-et- and FontAwesome icons with icon-fa- -->
+    <i class="icon-et-phone"></i> Entypo phone icon
+    <i class="icon-fa-search"></i> FontAwesome search icon
+
+== Note about Entypo
+
+The Entypo set used in this gem has been updated and remapped to support Safari on Windows.
+Because of that, some of Entypo icon names have changed, i.e. add-user icon is now called user-add.
+
+
+== License
+
+font-icons-rails code is released under the {MIT License}[http://www.opensource.org/licenses/MIT].
+
+Individual font licenses may wary, please consult font websites for more details:
+* http://fortawesome.github.com/Font-Awesome/
+* http://www.entypo.com/
+* http://github.com/somerandomdude/Iconic
+
+== Interesting Resources
+
+* http://css-tricks.com/flat-icons-icon-fonts/
+* http://thenounproject.com/
+* http://pictos.cc/font/
+* http://fontello.com/

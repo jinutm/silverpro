@@ -12,10 +12,20 @@ development:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: silveralmsrepo_development
+  database: silveralmsrepo1_development
   pool: 5
   username: postgres
   password: password
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: silveralmsrepo1_development
+  pool: 5
+  username: senoy
+  password: senoy12187557
   port: 5432
 
 
@@ -42,7 +52,7 @@ test:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: silveralmsrepo_test
+  database: silveralmsrepo1_test
   pool: 5
   username: postgres
   password: password
