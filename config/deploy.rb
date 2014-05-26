@@ -1,14 +1,14 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :application, 'silveralms.com'
+set :application, 'silveralms'
 set :repo_url, 'https://github.com/jinutm/silveralms.com.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/deploy/silveralms.com'
+set :deploy_to, '/home/deploy/silveralms'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -40,7 +40,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+       execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 

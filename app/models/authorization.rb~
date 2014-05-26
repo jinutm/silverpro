@@ -23,7 +23,7 @@ class Authorization < ActiveRecord::Base
   def self.create_without_email_from_hash(hash, user = nil)
     return create_from_hash(hash, user) if user.present?
 
-    hash['info']['email'] = "change-your-email+#{Time.now.to_i}@silveralms"
+    hash['info']['email'] = "change-your-email+#{Time.now.to_i}@neighbor.ly"
     auth = create_from_hash(hash)
     auth.user.confirm!
     auth
